@@ -123,7 +123,7 @@ Here are some quick results of using BNs for predicting TID:
 The learned structure is shown as below:
 
  <p align="center">
-      <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/27f3e8aba5933d1a14694cb55696f0ba21525006/Figure/BN_structure_directed.png"></a>
+      <img width="50%" src="https://github.com/cogniumak/BayesianNetwork/blob/daf80d75a19f7a16336e41d68d480e0a069fa8db/Figure/BN_structure_directed.png"></a>
  </p>
  
 
