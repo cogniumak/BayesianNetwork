@@ -5,7 +5,7 @@ Traffic Incident Duration (TID) refers to the time elapsed between when a traffi
 The process of TID is shown as follows [[1]](#1):
  
  <p align="center">
-      <img width="50%" src="https://github.com/zilinbian56/BayesianNet-TID/blob/6ab8a186b9e5bd3164fdee83e079ed24e95db198/Figure/Timeline%20of%20TID.png"></a>
+      <img width="50%" src="https://github.com/cogniumak/BayesianNetwork/blob/76dd2f55fcd92453f7ab49bae7190bc599244805/Figure/Timeline%20of%20TID.png"></a>
  </p>
 
 
