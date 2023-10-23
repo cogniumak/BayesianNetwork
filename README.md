@@ -74,7 +74,14 @@ Bayesian Networks (BN) are suitable for this task for several reasons:
 
 ## Data Description
 
-The dataset used in this project includes traffic incident records with various attributes. The main target variable is 'Duration (min)'. The target variable is converted into a categorical variable named 'Duration_class', class 0: 0-30min, class 1: 30-60min, class 2: 60-90min, class 3: larger than 90min. 
+The dataset used in this project includes a total of 4233 traffic incident records with various attributes. The main target variable is 'Duration (min)'. The target variable is converted into a categorical variable named 'Duration_class' with 4 classes, class 0: 0-30min, class 1: 30-60min, class 2: 60-90min, class 3: larger than 90min. 
+|   | Duraion (min) | 
+|---|-----------|
+| Class 0 | 0-30 |
+| Class 1 | 30-60 |
+| Class 2 | 60-90 |
+| Class 3 | >90 |
+
 The independent variables that influence the duration include:
 
 1. `Direction`: Direction of the incident, 0: both directions, 1: east, 2: west, 3: south, 4: north, 5: no information.
@@ -100,6 +107,7 @@ The independent variables that influence the duration include:
 12. `Fire involved`: Whether there is fire involved in the incident, 0: no history, 1: fire involved.
 
 Each record in the dataset represents a unique traffic incident.
+Please note that for those incident records with large portion of missing values will be randomly assigned synthetic attributes.
 
 
 ## Process of using Bayesian Networks for TID Prediction
@@ -141,8 +149,18 @@ The array of size `[245, 117, 65, 44]` represents the support for each class, th
 
 **Note**: The classes in the table above refer to different categories of TID defined in the 'Data Description' section. 
 
-4. **Prediction**: the prediction performance of BNs will be evaluated using TPR, FPR and AUC values for each 'Duration_class'.
+4. **Prediction**: the prediction performance of BNs will be evaluated using TPR, FPR and AUC values for each 'Duration_class':
 
+| TID Class                      | TPR   | FPR   | AUC  |
+| ------------------------------ | ----- | ----- | ---- |
+| Class 0 (0-30 min)             | 0.95  | 0     | 0.97 |
+| Class 1 (30-60 min)            | 1.00  | 0.03  | 0.98 |
+| Class 2 (60-90 min)            | 0.68  | 0     | 0.84 |
+| Class 3 (Larger than 90 min)   | 1.00  | 0.06  | 0.97 |
+| **Overall Accuracy**           | **92.5%** | | |
+
+
+*The overall accuracy score is 92.5%, which is acceptable based on [Li's paper](https://etrr.springeropen.com/articles/10.1186/s12544-018-0300-1). They summarized the acceptable accuracy of existing traffic incident duration prediction studies, ranging around 60%-70% (shown in Table 3.)
 
 For a practical guide on how to implement these steps, refer to the following virtual environment setup and associated Jupyter notebook and codebase in this repository.
 
