@@ -161,6 +161,7 @@ The array of size `[245, 117, 65, 44]` represents the support for each class, th
 
 
 *The overall accuracy score is 92.5%, which is acceptable based on [Li's paper](https://etrr.springeropen.com/articles/10.1186/s12544-018-0300-1). They summarized the acceptable accuracy of existing traffic incident duration prediction studies, ranging around 60%-70% (shown in Table 3.)
+For TPR, ideally close to 1.0; >0.7 or 0.8 is often considered good. For FPR, ideally close to 0; <0.1 or 0.05 is considered good. For AUC, >0.7 is acceptable; >0.8 is good; >0.9 is excellent.
 
 For a practical guide on how to implement these steps, refer to the following virtual environment setup and associated Jupyter notebook and codebase in this repository.
 
