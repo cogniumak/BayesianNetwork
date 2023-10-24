@@ -1,4 +1,4 @@
-Incident Type,Direction,County,Start Date Time,Duration (min),Year,Lane Closure Type,TOD,PeakHour,DayofWeek,MonthofYear,Injury involved,Truck involved,Fire involved
+Incident Type,Direction,County,Start Date Time,Duration (min),Year,Lane Closure Type,TOD,PeakHour,DayofWeek,SeasonofYear,Injury involved,Truck involved,Fire involved
 0,4,0,1/2/2021 14:01,5,6,1,0,0,1,2,0,0,0
 0,3,2,1/3/2021 16:20,5,6,1,0,1,1,2,0,0,0
 0,3,0,1/5/2021 10:54,5,6,1,0,0,0,2,0,0,0
