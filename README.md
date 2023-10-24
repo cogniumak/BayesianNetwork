@@ -153,14 +153,14 @@ The array of size `[245, 117, 65, 44]` represents the support for each class, th
 
 | TID Class                      | TPR   | FPR   | AUC  |
 | ------------------------------ | ----- | ----- | ---- |
-| Class 0 (0-30 min)             | 0.95  | 0     | 0.97 |
+| Class 0 (0-30 min)             | 0.95  | 0.01  | 0.97 |
 | Class 1 (30-60 min)            | 1.00  | 0.03  | 0.98 |
-| Class 2 (60-90 min)            | 0.68  | 0     | 0.84 |
+| Class 2 (60-90 min)            | 0.63  | 0     | 0.81 |
 | Class 3 (Larger than 90 min)   | 1.00  | 0.06  | 0.97 |
-| **Overall Accuracy**           | **92.5%** | | |
+| **Overall Accuracy**           | **91.6%** | | |
 
 
-*The overall accuracy score is 92.5%, which is acceptable based on [Li's paper](https://etrr.springeropen.com/articles/10.1186/s12544-018-0300-1). They summarized the acceptable accuracy of existing traffic incident duration prediction studies, ranging around 60%-70% (shown in Table 3.)
+*The overall accuracy score is 91.6%, which is acceptable based on [Li's paper](https://etrr.springeropen.com/articles/10.1186/s12544-018-0300-1). They summarized the acceptable accuracy of existing traffic incident duration prediction studies, ranging around 60%-70% (shown in Table 3.)
 For TPR, ideally close to 1.0; >0.7 or 0.8 is often considered good. For FPR, ideally close to 0; <0.1 or 0.05 is considered good. For AUC, >0.7 is acceptable; >0.8 is good; >0.9 is excellent.
 
 For a practical guide on how to implement these steps, refer to the following virtual environment setup and associated Jupyter notebook and codebase in this repository.
