@@ -96,7 +96,7 @@ The independent variables that influence the duration include:
 
 6. `DayofWeek`: The day when the incident occurred, 0: weekday, 1: weekend.
 
-7. `SeasonhofYear`: The season when the incident occurred, 0: spring and fall, 1: summer, 2: winter.
+7. `SeasonofYear`: The season when the incident occurred, 0: spring and fall, 1: summer, 2: winter.
 
 8. `Injury involved`: Whether there is injury involved in the incident, 0: no history, 1: injuries involved.
 
