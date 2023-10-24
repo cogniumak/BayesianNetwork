@@ -75,7 +75,7 @@ Bayesian Networks (BN) are suitable for this task for several reasons:
 ## Data Description
 
 The dataset used in this project includes a total of 4233 traffic incident records with various attributes. The main target variable is 'Duration (min)'. The target variable is converted into a categorical variable named 'Duration_class' with 4 classes, class 0: 0-30min, class 1: 30-60min, class 2: 60-90min, class 3: larger than 90min. 
-|   | Duraion (min) | 
+|   | Duration (min) | 
 |---|-----------|
 | Class 0 | 0-30 |
 | Class 1 | 30-60 |
@@ -96,7 +96,7 @@ The independent variables that influence the duration include:
 
 6. `DayofWeek`: The day when the incident occurred, 0: weekday, 1: weekend.
 
-7. `MonthofYear`: The season of month when the incident occurred, 0: spring and fall, 1: summer, 2: winter.
+7. `SeasonhofYear`: The season when the incident occurred, 0: spring and fall, 1: summer, 2: winter.
 
 8. `Injury involved`: Whether there is injury involved in the incident, 0: no history, 1: injuries involved.
 
