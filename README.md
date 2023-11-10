@@ -98,13 +98,13 @@ The independent variables that influence the duration include:
 
 7. `SeasonofYear`: The season when the incident occurred, 0: spring and fall, 1: summer, 2: winter.
 
-8. `Injury involved`: Whether there is injury involved in the incident, 0: no history, 1: injuries involved.
+8. `Injury involved`: Whether there is injury involved in the incident, 0: no injury, 1: injuries.
 
-9. `Truck involved`: Whether there is truck involved in the incident, 0: no history, 1: heavy vehicle involved.
+9. `Truck involved`: Whether there is truck involved in the incident, 0: no heavy vehicle involved, 1: heavy vehicle involved.
 
 10. `Lane Closure Type`: How many travel lanes closed due to the incident, 0: zero travel lane, 1: one travel lane, 2: more than two travel lanes, 3: all travel lanes.
 
-12. `Fire involved`: Whether there is fire involved in the incident, 0: no history, 1: fire involved.
+12. `Fire involved`: Whether there is fire involved in the incident, 0: no fire, 1: fire involved.
 
 Each record in the dataset represents a unique traffic incident.
 Please note that for those incident records with large portion of missing values will be randomly assigned synthetic attributes.
@@ -127,7 +127,7 @@ Here are the steps to use Bayesian Networks for predicting Traffic Incident Dura
 ## Some quick results of using Bayesian Networks for TID Prediction
 
 Here are some quick results of using BNs for predicting TID:
-1. **Learned Network Structure**: the structure learning method used in this study is Chow-Liu ('cl'), the score type used in this study includes ['k2', 'bds', 'bic', 'bdeu'] for model comparison, and obtained the structure with the highest score.
+1. **Learned Network Structure**: the structure learning method used in this study is [Chow-Liu ('cl')](https://ieeexplore.ieee.org/abstract/document/1054142?casa_token=Woz8snZ9j7MAAAAA:066xYu4m82tbg-ltHqDl7eXizJQNv4ImQpbkJwkAT7swJncASVHHrYsBMJCI48VCyLloFt9vPEc), the score type used in this study includes ['k2'](https://books.google.com/books?hl=en&lr=&id=LxXOBQAAQBAJ&oi=fnd&pg=PP1&dq=Bayesian+Artificial+Intelligence&ots=Q3ZHc8g1B3&sig=hj7P_e5Y7rjH75VvVWZ7wUyCc1k#v=onepage&q=Bayesian%20Artificial%20Intelligence&f=false), ['bds'](https://proceedings.mlr.press/v52/scutari16.html), ['bic'](https://arxiv.org/abs/1302.4938), ['bdeu'](https://link.springer.com/article/10.1007/s41237-016-0006-4) for model comparison, and obtained the structure with the highest score.
 The learned structure is shown as below:
 
  <p align="center">
@@ -136,7 +136,7 @@ The learned structure is shown as below:
  
 
 2. **Learned Parameter**: the estimator used for parameter learning is BayesianEstimator, the prior type used is 'bdeu'.
-3. **Model Validation**: The model performance of validation data set has been evaluated using Precision, Recall and F1-score for each class. Here is a summary of these metrics for our model:
+3. **Model Validation**: The model performance of validation data set has been evaluated using [Precision, Recall and F1-score](https://towardsdatascience.com/performance-metrics-confusion-matrix-precision-recall-and-f1-score-a8fe076a2262) for each class. Here is a summary of these metrics for our model:
 
 |   | Precision | Recall | F1-Score |
 |---|-----------|--------|----------|
@@ -149,7 +149,7 @@ The array of size `[245, 117, 65, 44]` represents the support for each class, th
 
 **Note**: The classes in the table above refer to different categories of TID defined in the 'Data Description' section. 
 
-4. **Prediction**: the prediction performance of BNs will be evaluated using TPR, FPR and AUC values for each 'Duration_class':
+4. **Prediction**: the prediction performance of BNs will be evaluated using [TPR, FPR](https://towardsdatascience.com/performance-metrics-confusion-matrix-precision-recall-and-f1-score-a8fe076a2262) and [AUC](https://towardsdatascience.com/roc-analysis-and-the-auc-area-under-the-curve-404803b694b9) values for each 'Duration_class':
 
 | TID Class                      | TPR   | FPR   | AUC  |
 | ------------------------------ | ----- | ----- | ---- |
