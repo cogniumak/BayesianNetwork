@@ -127,7 +127,7 @@ Here are the steps to use Bayesian Networks for predicting Traffic Incident Dura
 ## Some quick results of using Bayesian Networks for TID Prediction
 
 Here are some quick results of using BNs for predicting TID:
-1. **Learned Network Structure**: the structure learning method used in this study is [Chow-Liu ('cl')](https://ieeexplore.ieee.org/abstract/document/1054142?casa_token=Woz8snZ9j7MAAAAA:066xYu4m82tbg-ltHqDl7eXizJQNv4ImQpbkJwkAT7swJncASVHHrYsBMJCI48VCyLloFt9vPEc), the score type used in this study includes ['k2'](https://books.google.com/books?hl=en&lr=&id=LxXOBQAAQBAJ&oi=fnd&pg=PP1&dq=Bayesian+Artificial+Intelligence&ots=Q3ZHc8g1B3&sig=hj7P_e5Y7rjH75VvVWZ7wUyCc1k#v=onepage&q=Bayesian%20Artificial%20Intelligence&f=false), ['bds'](https://proceedings.mlr.press/v52/scutari16.html), ['bic'](https://arxiv.org/abs/1302.4938), ['bdeu'](https://link.springer.com/article/10.1007/s41237-016-0006-4) for model comparison, and obtained the structure with the highest score.
+1. **Learned Network Structure**: the structure learning method used in this study is [Chow-Liu ('cl')](https://ieeexplore.ieee.org/abstract/document/1054142?casa_token=Woz8snZ9j7MAAAAA:066xYu4m82tbg-ltHqDl7eXizJQNv4ImQpbkJwkAT7swJncASVHHrYsBMJCI48VCyLloFt9vPEc), the score type used in this study includes ['k2','bds','bic','bdeu'](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.157.3919&rep=rep1&type=pdf) for model comparison, and obtained the structure with the highest score.
 The learned structure is shown as below:
 
  <p align="center">
