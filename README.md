@@ -74,7 +74,7 @@ Bayesian Networks (BN) are suitable for this task for several reasons:
 
 ## Data Description
 
-The dataset used in this project includes a total of 4233 traffic incident records with various attributes. The main target variable is 'Duration (min)'. The target variable is converted into a categorical variable named 'Duration_class' with 4 classes, class 0: 0-30min, class 1: 30-60min, class 2: 60-90min, class 3: larger than 90min. 
+The dataset used in this project includes a total of 4233 traffic incident records happend on arterials and interstate highways across New York City in the year of 2021. The main target variable is 'Duration (min)'. The target variable is converted into a categorical variable named 'Duration_class' with 4 classes, class 0: 0-30min, class 1: 30-60min, class 2: 60-90min, class 3: larger than 90min. 
 |   | Duration (min) | 
 |---|-----------|
 | Class 0 | 0-30 |
